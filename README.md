@@ -1,4 +1,4 @@
-Website: https://corona-crisis-4691e.firebaseapp.com
+Website: https://covid2019relief.org
 
 Project Developed by Tanush Nadimpalli
 

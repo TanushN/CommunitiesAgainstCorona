@@ -1,7 +1,7 @@
 (function() {
 
     var firebaseConfig = {
-        apiKey: "AIzaSyA0FHVj7r7SflnZkuIMAfnsRfxjxST4B3I",
+        apiKey: "",
         authDomain: "corona-crisis-4691e.firebaseapp.com",
         databaseURL: "https://corona-crisis-4691e.firebaseio.com",
         projectId: "corona-crisis-4691e",

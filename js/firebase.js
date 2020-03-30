@@ -2,13 +2,13 @@
 
     var firebaseConfig = {
         apiKey: "",
-        authDomain: "corona-crisis-4691e.firebaseapp.com",
-        databaseURL: "https://corona-crisis-4691e.firebaseio.com",
-        projectId: "corona-crisis-4691e",
-        storageBucket: "corona-crisis-4691e.appspot.com",
-        messagingSenderId: "234329755517",
-        appId: "1:234329755517:web:cac82a16c8a57a663e4614",
-        measurementId: "G-WRTP3BLFHF"
+        authDomain: "",
+        databaseURL: "",
+        projectId: "",
+        storageBucket: "",
+        messagingSenderId: "",
+        appId: "",
+        measurementId: ""
     };
     // Initialize Firebase
     if (!firebase.apps.length) {

@@ -90,10 +90,7 @@ firebase.auth().onAuthStateChanged(user => {
         }
      });
 
-     
-
-     if(window.location.pathname != "/CoronaCrisis/gmaps.html")
-        window.location = "/CoronaCrisis/gmaps.html";
+        window.location = "gmaps.html";
     
         
       }

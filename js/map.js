@@ -10,24 +10,66 @@ var i = 0;
 
 function initMap(){
 
-
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 0, lng: 0},
-        zoom: 13
+        center: {lat: 37.090240, lng: -95.712891},
+        zoom: 4,
+        mapTypeControl: false,
+        streetViewControl: false,
+        styles:
+        [
+            {
+              "featureType": "administrative.land_parcel",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.business",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            },
+            {
+              "featureType": "road.local",
+              "elementType": "labels",
+              "stylers": [
+                {
+                  "visibility": "off"
+                }
+              ]
+            }
+          ]
     });
     
 
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-        var pos = {
+        navigator.geolocation.getCurrentPosition(function(position) {
+          var pos = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
           };
           map.setCenter(pos);
+          map.setZoom(11);
+        });
       } else {
-        //x.innerHTML = "Geolocation is not supported by this browser.";
+        // Browser doesn't support Geolocation
+        
       }
-    }
+    
     
     var locationsRef = firebase.database().ref("Locations");
     geocoder = new google.maps.Geocoder();
@@ -115,7 +157,7 @@ function initMap(){
             housekeeping();
 
 
-
+            }
 function housekeeping(){
 
     $('#submitMarker').on('click', function(event) {
@@ -145,9 +187,7 @@ function housekeeping(){
 
         } else {
             console.log('signed out');
-            if(window.location.pathname == "/CoronaCrisis/gmaps.html"){
-                window.location = "/CoronaCrisis/index.html";
-            }
+                window.location = "index.html";
         }
       });
 
@@ -552,12 +592,6 @@ function EachUserLocation(user){
 
 }
 
-function removeMarker(key){
-
-
-
-
-}
 
 
 

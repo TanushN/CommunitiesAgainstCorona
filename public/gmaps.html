@@ -17,6 +17,13 @@
 	<script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.11.0/firebase-database.js"></script>
     <script src="https://cdn.firebase.com/libs/geofire/4.0.0/geofire.min.js"></script>
+
+
+ <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+<script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+
+
 </head>
     
 
@@ -310,7 +317,8 @@
     <script>
         var sidebar = $('#sidebar').sidebar();
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1OetqSwnzkCiHaWJsM4Z2JDyn36aK-yY&callback=initMap"
-    async defer></script>
+     <script>
+      initMap();
+    </script>
 </body>
 </html>

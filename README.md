@@ -1,7 +1,7 @@
 # CoronaCrisis
 Project Developed By: **Tanush Nadimpalli**
 
-Website: https://covid2019releif.org
+Website: https://covid2019relief.org/
 
 **This project was highlighted in the Covid-19 Global Hackathon.**
 

@@ -1,4 +1,4 @@
-# CoronaCrisis
+# Communities Against Corona
 Project Developed By: **Tanush Nadimpalli**
 
 Website: https://covid2019relief.org/

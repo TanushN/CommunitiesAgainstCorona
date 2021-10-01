@@ -12,7 +12,7 @@ var client;
 
 function initMap() {
   mapboxgl.accessToken =
-    "pk.eyJ1IjoidGFudGkyIiwiYSI6ImNrN3M0YmV4OTBrcWkzZm5yM2p6bm93em8ifQ.w0PtDnkwlqGESN53ONGYFQ";
+    "";
   map = new mapboxgl.Map({
     container: "map",
     style: "mapbox://styles/mapbox/streets-v11",
